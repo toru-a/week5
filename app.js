@@ -18,7 +18,7 @@ reader.on('close', () => {
 
 reader.on('close', () => {
     const charge = 10000
-    const left = parseInt(lines)
+    let left = parseInt(lines)
     if(left < charge){
         console.log( left + charge );
     }else{
